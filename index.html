@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Disaster Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#teams">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome to the Disaster Management System</h2>
+        <p>This platform helps manage disasters efficiently by providing real-time information, resources, and support.</p>
+    </section>
+    <section id="reports">
+        <h2>Disaster Reports</h2>
+        <p>Here you can view real-time reports on ongoing disasters. Click on a disaster to view detailed information.</p>
+        <ul>
+            <li><a href="#">Flood in City A</a></li>
+            <li><a href="#">Earthquake in Region B</a></li>
+            <li><a href="#">Fire in Forest C</a></li>
+        </ul>
+    </section>
+
+    <div id="map"></div>
+
+    <section id="resources">
+        <h2>Available Resources</h2>
+        <p>These are the resources available for deployment to disaster areas.</p>
+        <ul>
+            <li>Food supplies</li>
+            <li>Medical kits</li>
+            <li>Rescue vehicles</li>
+            <li>Tents and shelters</li>
+        </ul>
+    </section>
+    
+    <section id="teams">
+        <h2>Rescue Teams</h2>
+        <p>Meet the rescue teams on the ground, ready to help in disaster-hit areas.</p>
+        <ul>
+            <li>Team Alpha - Region B</li>
+            <li>Team Bravo - Region C</li>
+            <li>Team Charlie - Region A</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Emergency Contact</h2>
+        <p>If you need immediate assistance, please fill out this form, and our team will respond promptly.</p>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
