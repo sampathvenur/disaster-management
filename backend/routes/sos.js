@@ -1,4 +1,3 @@
-// backend/routes/sos.js
 const express = require('express');
 const router = express.Router();
 const SOS = require('../models/sos');

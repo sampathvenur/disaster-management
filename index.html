@@ -22,18 +22,17 @@
     <section id="home">
         <h2>Welcome to the Disaster Management System</h2>
         <p>This platform helps manage disasters efficiently by providing real-time information, resources, and support.</p>
+        <button id="sosButton">Send SOS</button>
     </section>
+    
     <section id="reports">
         <h2>Disaster Reports</h2>
         <p>Here you can view real-time reports on ongoing disasters. Click on a disaster to view detailed information.</p>
-        <ul>
-            <li><a href="#">Flood in City A</a></li>
-            <li><a href="#">Earthquake in Region B</a></li>
-            <li><a href="#">Fire in Forest C</a></li>
+        <ul id="reports-list">
         </ul>
     </section>
 
-    <div id="map"></div>
+    <div id="map" style="height: 500px;"></div>
 
     <section id="resources">
         <h2>Available Resources</h2>
@@ -55,6 +54,7 @@
             <li>Team Charlie - Region A</li>
         </ul>
     </section>
+    
     <section id="contact">
         <h2>Emergency Contact</h2>
         <p>If you need immediate assistance, please fill out this form, and our team will respond promptly.</p>
@@ -68,7 +68,9 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+    
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="map.js"></script>
+<script src="map.js"></script>
+
 </body>
 </html>

@@ -42,7 +42,6 @@ section {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
     header {
         padding: 20px 0;
@@ -69,8 +68,7 @@ section {
     }
 }
 
-/* Ensure the map container has a height */
 #map {
-    height: 500px; /* Adjust height as needed */
-    width: 100%;   /* Full width */
+    height: 500px;
+    width: 100%;
 }

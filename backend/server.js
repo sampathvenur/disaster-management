@@ -1,4 +1,3 @@
-// backend/server.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -8,10 +7,12 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5000;
 
+// Import route files
 const reportRoutes = require('./routes/reports');
 const resourceRoutes = require('./routes/resources');
-const sosRoutes = require('./routes/sos');
+const sosRoutes = require('./routes/sosRoutes');  // Ensure the correct path and file name
 
+// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 

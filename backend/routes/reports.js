@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Report = require('../models/Report');
 
-// Get all reports
 router.get('/', async (req, res) => {
     try {
         const reports = await Report.find();
@@ -12,7 +11,6 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Create a new report
 router.post('/', async (req, res) => {
     const report = new Report({
         title: req.body.title,

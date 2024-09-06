@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Resource = require('../models/Resource'); // Assuming you already have a Resource model
+const Resource = require('../models/Resource');
 
-// GET all resources
 router.get('/', async (req, res) => {
     try {
         const resources = await Resource.find();
@@ -12,7 +11,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// POST a new resource
+
 router.post('/', async (req, res) => {
     const resource = new Resource({
         name: req.body.name,
